@@ -1,0 +1,102 @@
+/* Customizam Bootstrap */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #2bb686;
+  border-color: #2bb686;
+}
+
+.text-primary {
+  color: #101d42 !important;
+}
+
+.text-secondary {
+  color: #fbb44c !important;
+}
+
+.text-light {
+  color: #eaeaea !important;
+}
+
+.bg-primary {
+  background-color: #141e4c !important;
+}
+
+.bg-secondary {
+  background-color: #dfedf5 !important;
+}
+
+.bg-dark {
+  background-color: #101d42 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+/* Adaugam font-ul nostru */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Layout */
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Header */
+header {
+  height: 30vh;
+}
+
+/* Dorim ca toti copii din clasa weather-forecast-box sa aiba aceeasi dimensiune */
+.weather-forecast-box > * {
+  flex: 1;
+}
+
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  visibility: hidden;
+  background-color: #1a40a5;
+}
+
+.scroll-to-top:hover {
+  background-color: #17368e;
+}
+
+
+/* Adaugam stilizarile pentru mobile */
+@media (max-width: 576px) {
+  .current-weather {
+    text-align: center;
+  }
+
+  .current-weather img {
+    width: 75px;
+    height: auto;
+  }
+
+  .weather-forecast-box img{
+    width: 50px;
+    height: auto;
+  }
+
+  .weather-forecast-box .real-feel{
+    display: none;
+  }
+}
+
+
